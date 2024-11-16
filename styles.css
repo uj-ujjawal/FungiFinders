@@ -151,6 +151,9 @@
     --border-radius-2: 0.5rem;
     --border-radius-3: 0.75rem;
   }
+}
+
+@layer base {
   html {
     font-family: var(--ff-body);
     line-height: 1.6;
@@ -249,7 +252,6 @@
     font-size: var(--font-size-lg);
   }
 }
-
 @layer layout {
   .skip-to-main {
     position: absolute;
@@ -345,6 +347,16 @@
       minmax(min(var(--auto-fit-min-col-size), 100%), 1fr)
     );
   }
+  /* for lesser cards */
+  /* .grid-auto-fill {
+    --auto-fill-min-col-size: 300px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(var(--auto-fill-min-col-size), 100%), 1fr)
+    );
+  } */
   .flex-group {
     display: flex;
     flex-wrap: wrap;
