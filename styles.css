@@ -427,7 +427,7 @@ for delay the transition between pages.
         padding-block-start: 1.5rem;
         border-top: 2px solid var(--background-accent-light);
       }
-      [aria-expanded="false"] + & {
+      [aria-expanded="true"] + & {
         display: block;
       }
     }
