@@ -1,3 +1,13 @@
+/* adding a smooth transition between pages */
+@view-transition {
+  navigation: auto;
+}
+
+/* ::view-transition-group(root) {
+for delay the transition between pages.
+  animation-duration: 0.3s;
+} */
+
 /* Setting layer order like this, will override any later adjustments to their arrangement */
 @layer reset, base, layout,components;
 
