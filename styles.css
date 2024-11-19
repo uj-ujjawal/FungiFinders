@@ -261,6 +261,10 @@ for delay the transition between pages.
   .font-size-lg {
     font-size: var(--font-size-lg);
   }
+  .resizing * {
+    transition: none;
+    /* animation: none !important; */
+  }
 }
 @layer layout {
   .skip-to-main {
